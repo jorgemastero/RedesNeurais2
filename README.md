@@ -81,7 +81,9 @@ python
 results_df = training_history.get_dataframe()
 
 # Mostrar top 5 modelos
+
 print(results_df.sort_values('Test_MAE').head(5))
+
 🌟 Boas Práticas Implementadas
 ✅ Divisão estratificada dos dados
 ✅ Otimização abrangente de hiperparâmetros
@@ -90,6 +92,7 @@ print(results_df.sort_values('Test_MAE').head(5))
 ✅ Serialização pronta para produção
 
 📅 Histórico de Versões
+
 v1.0: Versão inicial com funcionalidades básicas
 
 v1.1: Adicionada validação cruzada e melhorias no logging
