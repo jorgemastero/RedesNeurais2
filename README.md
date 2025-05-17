@@ -1,25 +1,38 @@
-Documentação Técnica Completa: Sistema de Predição Matemática
-1. Introdução
+
+#1. Introdução
 Este documento apresenta a implementação completa de um sistema de predição de operações matemáticas utilizando redes neurais profundas, com exemplos executáveis e demonstrações de resultados.
 
-2. Configuração Inicial
+#2. Configuração Inicial
 2.1 Importação de Bibliotecas
-python
+
 # Bibliotecas essenciais
+
 import tensorflow as tf
+
 from tensorflow import keras
+
 from sklearn.model_selection import train_test_split, KFold
+
 from sklearn.preprocessing import StandardScaler
+
 import numpy as np
+
 import pandas as pd
 
+
 # Visualização e utilitários
+
 import matplotlib.pyplot as plt
+
 import datetime
+
 import os
+
 import pickle
+
 2.2 Constantes Globais
-python
+
+
 NORMALIZATION_FACTOR = 100 * 100  # Fator para normalização de saída
 os.makedirs("my_logs", exist_ok=True)  # Diretório para logs
 os.makedirs("tuner_dir", exist_ok=True)  # Diretório para tuning
