@@ -114,7 +114,10 @@ Funcionalidades
     O modelo gera automaticamente:
     
         Gráficos de Evolução
-    
+        ![Evolução do MAE e Lss](https://github.com/user-attachments/assets/f4c07d83-d068-4fc4-a333-193e1e7b3b73)
+        ![evoluçãoMelhorTentativa](https://github.com/user-attachments/assets/4a6b6bc4-01c6-41ee-96cb-233fbd098608)
+
+
         MAE e Loss durante o treinamento
     
         Comparação entre treino e validação
