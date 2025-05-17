@@ -113,21 +113,25 @@ Funcionalidades
 # 📊 Resultados
     O modelo gera automaticamente:
     
-    Gráficos de Evolução
+        Gráficos de Evolução
+        ![Evolução do MAE e Lss](https://github.com/user-attachments/assets/0d5aa7a0-e59a-4e62-8269-497896926f0a)
+        ![evoluçãoMelhorTentativa](https://github.com/user-attachments/assets/c3f134b9-6274-4e5a-9ab0-be02f051d985)
+
+
     
-    MAE e Loss durante o treinamento
+        MAE e Loss durante o treinamento
     
-    Comparação entre treino e validação
+        Comparação entre treino e validação
     
-    Dataset de Resultados
+        Dataset de Resultados
     
-    historico_treinamento_completo.csv com todas as tentativas
+        historico_treinamento_completo.csv com todas as tentativas
     
-    Ranking das 10 melhores configurações
+        Ranking das 10 melhores configurações
     
-    Métricas por Operação
+        Métricas por Operação
     
-    MAE e MSE específicos para cada operação matemática
+        MAE e MSE específicos para cada operação matemática
 
 # Modelo Salvo
 
