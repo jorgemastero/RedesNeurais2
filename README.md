@@ -117,7 +117,9 @@ Funcionalidades
 ![Evolução do MAE e Lss](https://github.com/user-attachments/assets/f4c07d83-d068-4fc4-a333-193e1e7b3b73)
 
         MAE e Loss durante o treinamento
-    
+        
+![duranteTreino](https://github.com/user-attachments/assets/34ce78ad-9634-4ebc-850b-152fa7799ba1)
+
         Comparação entre treino e validação
         
 ![evoluçãoMelhorTentativa](https://github.com/user-attachments/assets/4a6b6bc4-01c6-41ee-96cb-233fbd098608)
