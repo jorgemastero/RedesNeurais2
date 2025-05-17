@@ -1,9 +1,9 @@
-#Modelo de Rede Neural para Operações Matemáticas
+# Modelo de Rede Neural para Operações Matemáticas
 
 
 Este projeto implementa uma rede neural para prever resultados de operações matemáticas básicas (adição, subtração, multiplicação e divisão) utilizando TensorFlow e Keras Tuner para otimização de hiperparâmetros.
 
-#📋 Sumário
+# 📋 Sumário
 Funcionalidades
     
     Uso
@@ -16,7 +16,7 @@ Funcionalidades
     
     Contribuição
     
-✨ Funcionalidades
+# ✨ Funcionalidades
 
     ✅ Geração automática de dados de treinamento
     
@@ -36,7 +36,7 @@ Funcionalidades
     
     ✅ Visualização completa da evolução do treinamento
 
-#O script irá:
+# O script irá:
 
     Gerar dados de treinamento
     
@@ -63,7 +63,7 @@ Funcionalidades
     ├── tuner_dir/                # Resultados do Keras Tuner
     └── README.md                 # Este arquivo
     
-#🔄 Fluxo de Trabalho
+# 🔄 Fluxo de Trabalho
     Geração de Dados
     
     Cria 10.000 exemplos balanceados de operações matemáticas
@@ -82,7 +82,7 @@ Funcionalidades
     
     Arquitetura: 4 camadas densas com dropout
 
-#Hiperparâmetros otimizáveis:
+# Hiperparâmetros otimizáveis:
 
     Unidades por camada
     
@@ -110,7 +110,7 @@ Funcionalidades
     
     Ranking das melhores tentativas
 
-#📊 Resultados
+# 📊 Resultados
     O modelo gera automaticamente:
     
     Gráficos de Evolução
@@ -129,6 +129,6 @@ Funcionalidades
     
     MAE e MSE específicos para cada operação matemática
 
-#Modelo Salvo
+# Modelo Salvo
 
     melhor_modelo_tunado.pkl contendo o modelo e scaler
