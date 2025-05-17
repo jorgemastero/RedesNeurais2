@@ -114,24 +114,28 @@ Funcionalidades
     O modelo gera automaticamente:
     
         Gráficos de Evolução
-        ![Evolução do MAE e Lss](https://github.com/user-attachments/assets/f4c07d83-d068-4fc4-a333-193e1e7b3b73)
-        ![evoluçãoMelhorTentativa](https://github.com/user-attachments/assets/4a6b6bc4-01c6-41ee-96cb-233fbd098608)
-
+![Evolução do MAE e Lss](https://github.com/user-attachments/assets/f4c07d83-d068-4fc4-a333-193e1e7b3b73)
 
         MAE e Loss durante o treinamento
     
         Comparação entre treino e validação
-    
-        Dataset de Resultados
-    
-        historico_treinamento_completo.csv com todas as tentativas
+        
+![evoluçãoMelhorTentativa](https://github.com/user-attachments/assets/4a6b6bc4-01c6-41ee-96cb-233fbd098608)
     
         Ranking das 10 melhores configurações
-    
-        Métricas por Operação
-    
-        MAE e MSE específicos para cada operação matemática
+        
+![RankingTentativas](https://github.com/user-attachments/assets/d7c17fb8-e8d8-48b8-af9e-cb0f52a65078)
 
+        Métricas por Operação
+        
+![avaliaçãoFinal](https://github.com/user-attachments/assets/b056f8bd-10ca-4a56-9310-804402d7b67d)
+    
+        Exemplo de resultados:
+
+![testeManual](https://github.com/user-attachments/assets/e47454bf-f431-4737-b5f8-ef58345141ea)
+![testeManual2](https://github.com/user-attachments/assets/6c057c53-794f-40a9-8f53-ecd0527af572)
+![testeManualDivisão](https://github.com/user-attachments/assets/7a9f156a-9907-4c41-a12a-436565214316)
+      
 # Modelo Salvo
 
     melhor_modelo_tunado.pkl contendo o modelo e scaler
