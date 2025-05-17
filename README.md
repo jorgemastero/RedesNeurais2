@@ -7,52 +7,60 @@ Este documento apresenta a implementação completa de um sistema de predição 
 
 # Bibliotecas essenciais
 
-import tensorflow as tf
+    import tensorflow as tf
 
-from tensorflow import keras
+    from tensorflow import keras
 
-from sklearn.model_selection import train_test_split, KFold
+    from sklearn.model_selection import train_test_split, KFold
 
-from sklearn.preprocessing import StandardScaler
+    from sklearn.preprocessing import StandardScaler
 
-import numpy as np
+    import numpy as np
 
-import pandas as pd
+    import pandas as pd
 
 
 # Visualização e utilitários
 
-import matplotlib.pyplot as plt
+    import matplotlib.pyplot as plt
 
-import datetime
+    import datetime
 
-import os
+    import os
 
-import pickle
+    import pickle
 
 2.2 Constantes Globais
 
 
-NORMALIZATION_FACTOR = 100 * 100  # Fator para normalização de saída
-os.makedirs("my_logs", exist_ok=True)  # Diretório para logs
-os.makedirs("tuner_dir", exist_ok=True)  # Diretório para tuning
-3. Geração de Dados Sintéticos
+    NORMALIZATION_FACTOR = 100 * 100  # Fator para normalização de saída
+
+    os.makedirs("my_logs", exist_ok=True)  # Diretório para logs
+
+    os.makedirs("tuner_dir", exist_ok=True)  # Diretório para tuning
+
+#3. Geração de Dados Sintéticos
+
 3.1 Função de Normalização
-python
-def normalizar_saida(y):
+
+    def normalizar_saida(y):
+    
     """Normaliza os valores de saída para o intervalo [0, 1]"""
+
     return y / NORMALIZATION_FACTOR
 
-def desnormalizar_saida(y_normalizado):
+    def desnormalizar_saida(y_normalizado):
+
     """Reverte a normalização para valores originais"""
+ 
     return y_normalizado * NORMALIZATION_FACTOR
 3.2 Gerador de Dados
-python
-def train_datas(numbers):
-    """Gera dataset balanceado de operações matemáticas"""
-    base_per_op = numbers // 4
-    remainder = numbers % 4
-    op_counts = [base_per_op + (1 if i < remainder else 0) for i in range(4)]
+
+    def train_datas(numbers):
+        """Gera dataset balanceado de operações matemáticas"""
+        base_per_op = numbers // 4
+        remainder = numbers % 4
+        op_counts = [base_per_op + (1 if i < remainder else 0) for i in range(4)]
     
     X, y = [], []
     for op, count in enumerate(op_counts):
