@@ -1,78 +1,52 @@
-Modelo de Rede Neural para Operações Matemáticas
-Python
-TensorFlow
-KerasTuner
+#Modelo de Rede Neural para Operações Matemáticas
+
 
 Este projeto implementa uma rede neural para prever resultados de operações matemáticas básicas (adição, subtração, multiplicação e divisão) utilizando TensorFlow e Keras Tuner para otimização de hiperparâmetros.
 
-📋 Sumário
+#📋 Sumário
 Funcionalidades
-
-Instalação
-
-Uso
-
-Estrutura do Código
-
-Fluxo de Trabalho
-
-Resultados
-
-Contribuição
-
-Licença
-
+    
+    Uso
+    
+    Estrutura do Código
+    
+    Fluxo de Trabalho
+    
+    Resultados
+    
+    Contribuição
+    
 ✨ Funcionalidades
-✅ Geração automática de dados de treinamento
 
-✅ Normalização e pré-processamento inteligente
+    ✅ Geração automática de dados de treinamento
+    
+    ✅ Normalização e pré-processamento inteligente
+    
+    ✅ Modelagem com arquitetura flexível e configurável
+    
+    ✅ Otimização de hiperparâmetros com Keras Tuner
+    
+    ✅ Validação cruzada robusta
+    
+    ✅ Múltiplas tentativas de treinamento com persistência do melhor modelo
+    
+    ✅ Avaliação detalhada por tipo de operação
+    
+    ✅ Interface interativa para teste manual
+    
+    ✅ Visualização completa da evolução do treinamento
 
-✅ Modelagem com arquitetura flexível e configurável
+#O script irá:
 
-✅ Otimização de hiperparâmetros com Keras Tuner
-
-✅ Validação cruzada robusta
-
-✅ Múltiplas tentativas de treinamento com persistência do melhor modelo
-
-✅ Avaliação detalhada por tipo de operação
-
-✅ Interface interativa para teste manual
-
-✅ Visualização completa da evolução do treinamento
-
-🔧 Instalação
-Clone o repositório:
-
-bash
-git clone https://github.com/seu-usuario/math-operations-model.git
-cd math-operations-model
-Crie e ative um ambiente virtual (recomendado):
-
-bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-Instale as dependências:
-
-bash
-pip install -r requirements.txt
-🚀 Uso
-Execute o script principal:
-
-bash
-python math_operations_model.py
-O script irá:
-
-Gerar dados de treinamento
-
-Treinar e otimizar o modelo
-
-Salvar o melhor modelo encontrado
-
-Exibir resultados e gráficos de desempenho
-
-Para testar o modelo manualmente após o treinamento:
+    Gerar dados de treinamento
+    
+    Treinar e otimizar o modelo
+    
+    Salvar o melhor modelo encontrado
+    
+    Exibir resultados e gráficos de desempenho
+    
+    Para testar o modelo manualmente após o treinamento:
 
 
 # Carregar modelo e scaler
@@ -89,72 +63,72 @@ Para testar o modelo manualmente após o treinamento:
     ├── tuner_dir/                # Resultados do Keras Tuner
     └── README.md                 # Este arquivo
     
-🔄 Fluxo de Trabalho
-Geração de Dados
+#🔄 Fluxo de Trabalho
+    Geração de Dados
+    
+    Cria 10.000 exemplos balanceados de operações matemáticas
+    
+    Garante distribuição uniforme entre as operações
+    
+    Pré-processamento
+    
+    Normalização de entradas e saídas
+    
+    Codificação one-hot das operações
+    
+    Divisão em conjuntos de treino/validação/teste (60%/20%/20%)
+    
+    Modelagem
+    
+    Arquitetura: 4 camadas densas com dropout
 
-Cria 10.000 exemplos balanceados de operações matemáticas
+#Hiperparâmetros otimizáveis:
 
-Garante distribuição uniforme entre as operações
+    Unidades por camada
+    
+    Taxa de dropout
+    
+    Função de ativação
+    
+    Regularização
+    
+    Otimizador e taxa de aprendizado
+    
+    Treinamento
+    
+    Validação cruzada com 3 folds
+    
+    Busca aleatória de hiperparâmetros
+    
+    Múltiplas tentativas até atingir MAE < 0.005
+    
+    Avaliação
+    
+    Desempenho por tipo de operação
+    
+    Gráficos de evolução do treinamento
+    
+    Ranking das melhores tentativas
 
-Pré-processamento
+#📊 Resultados
+    O modelo gera automaticamente:
+    
+    Gráficos de Evolução
+    
+    MAE e Loss durante o treinamento
+    
+    Comparação entre treino e validação
+    
+    Dataset de Resultados
+    
+    historico_treinamento_completo.csv com todas as tentativas
+    
+    Ranking das 10 melhores configurações
+    
+    Métricas por Operação
+    
+    MAE e MSE específicos para cada operação matemática
 
-Normalização de entradas e saídas
+#Modelo Salvo
 
-Codificação one-hot das operações
-
-Divisão em conjuntos de treino/validação/teste (60%/20%/20%)
-
-Modelagem
-
-Arquitetura: 4 camadas densas com dropout
-
-Hiperparâmetros otimizáveis:
-
-Unidades por camada
-
-Taxa de dropout
-
-Função de ativação
-
-Regularização
-
-Otimizador e taxa de aprendizado
-
-Treinamento
-
-Validação cruzada com 3 folds
-
-Busca aleatória de hiperparâmetros
-
-Múltiplas tentativas até atingir MAE < 0.005
-
-Avaliação
-
-Desempenho por tipo de operação
-
-Gráficos de evolução do treinamento
-
-Ranking das melhores tentativas
-
-📊 Resultados
-O modelo gera automaticamente:
-
-Gráficos de Evolução
-
-MAE e Loss durante o treinamento
-
-Comparação entre treino e validação
-
-Dataset de Resultados
-
-historico_treinamento_completo.csv com todas as tentativas
-
-Ranking das 10 melhores configurações
-
-Métricas por Operação
-
-MAE e MSE específicos para cada operação matemática
-
-Modelo Salvo
-
-melhor_modelo_tunado.pkl contendo o modelo e scaler
+    melhor_modelo_tunado.pkl contendo o modelo e scaler
